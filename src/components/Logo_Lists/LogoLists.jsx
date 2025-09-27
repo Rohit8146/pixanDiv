@@ -11,6 +11,7 @@ import logoSeven from "../../assets/logo_9.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 export default function LogoCarousel() {
   const logos = [
     logoOne,
