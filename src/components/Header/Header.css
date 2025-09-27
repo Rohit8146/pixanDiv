@@ -1,0 +1,149 @@
+.container{
+    max-width : 1480px;
+    margin : 0 auto;
+    padding : 0 20px;
+}
+.header-style{
+    border : 1px solid #E1E1E1;
+    border-radius : 8px;
+    box-shadow: 5px 24px 51px 15px #0000001c;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 30px 20px;
+    margin-top : 50px;
+}
+.header-style .header_links_container{
+    display : flex;
+    gap : 60px;
+    font-family: "Manrope", sans-serif;
+}
+.header-style .header_links_container a{
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color : #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.enquire_btn{
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color : #fff !important;
+    text-align: center;
+    background-color : #511FCE;
+    padding : 10px 30px;
+    border-radius : 30px;
+    margin-left : 50px;
+}
+
+
+
+
+/* Hover  */
+.header_links_container .header-links{
+    position: relative;
+}
+.header_links_container .header-links:after{
+    content : '';
+    position: absolute;
+    width : 0%;
+    height : 100%;
+    bottom : 0px;
+    left : 0px;
+    border-bottom : 1px solid #511FCE;
+    transition: all 0.5s ease-in-out;
+}
+.header_links_container .header-links:hover:after{
+    width : 100%;
+    transition: all 0.5s ease-in-out;
+}
+.header_links_container .header-links:hover{
+    color : #511FCE;
+    transition: all 0.5s ease-in-out;
+}
+.header-links.active{
+    color : #511FCE !important;
+    border-bottom : 1px solid #511FCE;
+}
+.x-cross{
+    display : none;
+}
+
+@media(max-width : 1600px){
+    .header-style{
+        margin-top : 15px;
+    }
+}
+
+@media(max-width : 1024px){
+    .header-style{
+        padding :20px;
+    }
+}
+
+@media(max-width : 768px){
+    .header-style {
+        position: relative;
+        margin-top: 10px;
+    }
+    .header-style .header_links_container{
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        background-color: #ffffff;
+        right: -8px;
+        width: 400px;
+        height : 100vh;
+        padding: 40px 20px;
+        top: -7px;
+        gap: 40px;
+        box-shadow: -18px 16px 40px 13px #0000000d;
+        transition: all 0.3s ease-in-out;
+    }
+    .header-style.showheader .header_links_container{
+        visibility: visible;
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+    }
+    .x-cross{
+        display : block;
+        text-align: right;
+    }
+    .enquire_btn{
+        margin: 0;
+        max-width : 350px;
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+    .header-style .header_links_container{
+        gap : 30px;
+    }
+}
+
+@media(max-width : 480px){
+    .header-style .logo{
+        width : 130px;
+    }
+    .header-style .header_links_container{
+        max-width: 400px;
+        width: 100%;
+    }
+    .header_links_container .header-links{
+        padding : 0 20px
+    }
+    .enquire_btn {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

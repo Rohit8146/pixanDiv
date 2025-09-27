@@ -1,0 +1,38 @@
+.input-field{
+    max-width : 730px;
+    background-color: #000;
+    display : flex;
+    border-radius : 20px;
+    width : 730px;
+}
+.input-field input{
+    font-size : 18px;
+    width : 100%;
+    padding : 20px 10px;
+    background-color : transparent;
+    border : 0px;
+    outline : 0;
+    margin-left : 20px;
+    color : #fff;
+    font-weight: 600;
+}
+.input-field input::placeholder{
+    color : #fff;
+    font-family: "Manrope", sans-serif;
+    font-weight : 600;
+}
+.input-field button{
+    background-color: transparent;
+    border : 0;
+    width : 40px;
+    margin-right : 20px;
+}
+@media(max-width : 768px){
+    .input-field{
+        width : 100%;
+        max-width : 400px;
+    }
+    .input-field input{
+        font-size : 16px;
+    }
+}

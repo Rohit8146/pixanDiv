@@ -1,0 +1,35 @@
+.button-title_inner{
+    display: flex;
+    flex-direction: column;
+    height : 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-image_inner{
+    width : 28px;
+    height: 25px;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    gap : 5px;
+}
+.button-image_inner span{
+    transition: all 0.3s ease-in-out;
+}
+.button-hover-animation{
+    overflow: hidden;
+}
+.button-hover-animation:hover .button-title_inner{
+    transform: translateY(-48px);
+    transition: all 0.3s ease-in-out;
+}
+.button-hover-animation:hover .button-image_inner span{
+    transform: translateX(30px);
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width : 1280px){
+    .button-box{
+        min-width : 240px
+    }
+}

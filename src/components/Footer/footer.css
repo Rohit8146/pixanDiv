@@ -1,0 +1,132 @@
+.slider_box{
+    flex-direction: row;
+    display : flex;
+    gap : 20px;
+}
+.slider_box h3 {
+    white-space: nowrap; /* prevent wrapping */
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.slider-parent {
+    background-color: #511FCE;
+}
+.slider-parent h3{
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 42.2px;
+    line-height: 46.8px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color : #fff;
+    padding : 0 40px
+}
+.footer-title{
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 19.59px;
+    line-height: 30.8px;
+    letter-spacing: 0%;
+    padding : 10px 0;
+}
+.footer-links{
+    margin-top : 60px;
+}
+.footerlink{
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 32.2px;
+    line-height: 46.8px;
+    letter-spacing: 0%;
+    padding : 35px 0;
+    border-bottom : 1px solid #DBDBDB;
+    display: block;
+    color : #000;
+    text-decoration: none;
+    text-align: center;
+}
+.gradiant-bg{
+    position: relative;
+    text-align: center;
+}
+.footerbg{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    top : 0;
+    left : 0;
+    z-index: -1;
+}
+.footerlogo{
+    margin : 150px auto 0px;
+    width : 100%;
+    object-fit: contain;
+}
+.gradiant-bg h4{
+    font-family: Syne;
+    font-weight: 600;
+    font-size: 40px;
+    color : #000;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding : 25px 0 15px;
+    margin : 0px;
+}
+.email-copyright{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 15px 0px 70px;
+}
+.footer_links{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 60px;
+}
+.email-copyright a{
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color : #000;
+    margin : 0px;
+    text-decoration: none;
+}
+
+
+@media(max-width : 1024px){
+    .footerlink {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px 0;
+    }
+    .gradiant-bg h4 {
+        font-size: 30px;
+    }
+    .email-copyright a {
+        font-size: 16px;
+    }
+    .footer_links {
+        gap: 30px;
+    }
+    
+}
+
+@media(max-width : 575px){
+    .email-copyright,
+    .footer_links{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .footerlogo{
+        margin : 50px auto 0px;
+    }
+}
+
+
