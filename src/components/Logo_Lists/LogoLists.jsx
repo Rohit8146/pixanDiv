@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./logo.css";
+import "./Logo.css";
 import logoOne from "../../assets/logo_2.jpg";
 import logoTwo from "../../assets/logo_3.png";
 import logoThree from "../../assets/logo_8.png";
@@ -10,7 +10,6 @@ import logoSix from "../../assets/logo_7.png";
 import logoSeven from "../../assets/logo_9.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 
 export default function LogoCarousel() {
   const logos = [
